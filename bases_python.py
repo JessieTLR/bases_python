@@ -15,7 +15,7 @@ print(f"Le résultat de l'addition de {a} et {b} est {int(a) + int(b)}")
 """
 
 """ Liste de courses """
-
+"""
 liste_course=[]
 
 choice = input (" Choisissez parmi les 5 options suivantes: " \
@@ -59,3 +59,7 @@ while True :
     "4 : Vider la liste" \
     "5 : Quitter" \
     "👉 Votre choix : ")
+
+    """
+
+""" """
