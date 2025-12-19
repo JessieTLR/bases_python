@@ -69,32 +69,30 @@ import random
 nombre_mystere= random.randint(0,100)
 tour=5
 
-while True:
-    nombre_utilisateur= input("Deviner le nombre mystère : ")
+while tour>0 :
+    print(f"il vous reste {tour} essai{'s' if tour>1 else ''}")
 
-    if not nombre_utilisateur.isdigit(): 
-        print("Veuillez entrer un nombre valide")
+    nb_utilisateur=input("Devinez le nombre: ")
+
+    if not nb_utilisateur.isdigit():
+        print("Veuilllez entre un nombre entre 0 et 100")
+        continue
+    elif nb_utilisateur>100 or nb_utilisateur<0:
+        print("Veuilllez entre un nombre entre 0 et 100")
+        continue
+
+    nb_utilisateur=int(nb_utilisateur)
+
+    if nb_utilisateur>nombre_mystere:
+        print(f"Le nombre mystère est plus petit que {nb_utilisateur}")
+    elif nb_utilisateur>nombre_mystere:
+        print(f"Le nombre mystère est plus grand que {nb_utilisateur}")
+    else:
+        break
+
+    tour-=1
+
+if tour==0 : 
     
-    elif int(nombre_utilisateur)<0 or int(nombre_utilisateur)>100 :
-        print("Veuillez entrer un nombre entre 0 et 100")
+    
 
-    else: 
-        if int(nombre_mystere)>int(nombre_utilisateur) and tour>0:
-            print(f"Le nombre mystère est plus grand que {nombre_utilisateur}")
-            tour-=1
-            print(f"Il vous reste {tour} essai{'s' if tour>1 else ''}")
-
-        elif int(nombre_mystere)<int(nombre_utilisateur) and tour>0:
-            print(f"Le nombre mystère est plus petit que {nombre_utilisateur}")
-            tour-=1
-            print(f"Il vous reste {tour} essai{'s' if tour>1 else ''}")
-
-        elif int(nombre_mystere)==int(nombre_utilisateur) and tour>0 : 
-            print(f"Bravo le nombre est bien {nombre_mystere}")
-            print(f"Tu as trouvé la solution en {5-tour} essai{'s' if tour>1 else ''}")
-        
-        elif tour == 0:
-            print(f"Perdu ! Le nombre mystère été : {nombre_mystere}")
-            break
-
-nombre_utilisateur= input("Deviner le nombre mystère : ")
