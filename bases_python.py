@@ -91,10 +91,10 @@ while tour>0 :
     tour-=1
 
 if tour==0 :
-    print(f"Trop tard! Le nombre mystère été {nombre_mystere}") 
+    print(f"Trop tard! ⏳ Le nombre mystère été {nombre_mystere}") 
 
 if tour>0 and nb_utilisateur==nombre_mystere: 
-    print(f"Félicitation le nombre mystère est bien {nb_utilisateur}. Tu as réussi en {5 - tour}  essais")
+    print(f"Félicitation 🎉 le nombre mystère est bien {nb_utilisateur}. Tu as réussi en {5 - tour}  essais")
     
 
 
