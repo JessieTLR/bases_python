@@ -10,39 +10,38 @@ while not (a.isdigit() and b.isdigit()):
         print ("Veuillez entrer deux nombres valides")
 
 print(f"Le résultat de l'addition de {a} et {b} est {int(a) + int(b)}")
-print ("Voulez-vous faire un autre calcul? Y/N")
-
+#print ("Voulez-vous faire un autre calcul? Y/N")
 
 
 """ Liste de courses """
 
-liste_course=[]
+liste_courses=[]
 
 choice = input (" Choisissez parmi les 5 options suivantes: " \
-"1 : Ajouter un élément à la liste" \
-"2 : Retirer un élément de la liste" \
-"3 : Afficher la liste" \
-"4 : Vider la liste" \
+"1 : Ajouter un élément à la liste de courses" \
+"2 : Retirer un élément de la liste de courses" \
+"3 : Afficher la liste de courses" \
+"4 : Vider la liste de courses" \
 "5 : Quitter" \
 "👉 Votre choix : ")
 
 while True : 
     if choice == "1" :
         ajout = input("Quel produit souhaitez-vous ajouter : ")
-        liste_course.append(ajout)
+        liste_courses.append(ajout)
         
     elif choice == "2" : 
         retrait = input ("Quel produit produit souhaitez-vous retirer : ")
-        if retrait in liste_course:
-            liste_course.remove(retrait)
+        if retrait in liste_courses:
+            liste_courses.remove(retrait)
         else:
             print("Ce produit n'est pas dans la liste")
         
     elif choice == "3" : 
-        print("Voici votre liste de course: ", liste_course)
+        print("Voici votre liste de course: ", liste_courses)
         
     elif choice == "4" :
-        liste_course.clear()
+        liste_courses.clear()
         print ("Liste de course vidée")
         
     elif choice == "5": 
