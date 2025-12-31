@@ -42,10 +42,10 @@ while True :
         
     elif choice == "4" :
         liste_courses.clear()
-        print ("Liste de course vidée")
+        print ("Liste de course vidée 🛒❌")
         
     elif choice == "5": 
-        print ("A bientôt")
+        print ("A bientôt 👋")
         break
 
     else : 
