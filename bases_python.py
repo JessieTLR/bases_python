@@ -10,6 +10,7 @@ while not (a.isdigit() and b.isdigit()):
         print ("Veuillez entrer deux nombres valides")
 
 print(f"Le résultat de l'addition de {a} et {b} est {int(a) + int(b)}")
+print ("Voulez-vous faire un autre calcul? Y/N")
 
 
 
