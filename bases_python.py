@@ -1,6 +1,5 @@
 """ Calculatrice """
 
-"""
 a = b =""
 
 while not (a.isdigit() and b.isdigit()):
@@ -12,10 +11,10 @@ while not (a.isdigit() and b.isdigit()):
 
 print(f"Le résultat de l'addition de {a} et {b} est {int(a) + int(b)}")
 
-"""
+
 
 """ Liste de courses """
-"""
+
 liste_course=[]
 
 choice = input (" Choisissez parmi les 5 options suivantes: " \
@@ -60,10 +59,8 @@ while True :
     "5 : Quitter" \
     "👉 Votre choix : ")
 
-    """
-
 """ Le nombre mystère """
-"""
+
 import random
 
 nombre_mystere= random.randint(0,100)
@@ -99,7 +96,7 @@ if tour==0 :
 if tour>0 and nb_utilisateur==nombre_mystere: 
     print(f"Félicitation le nombre mystère est bien {nb_utilisateur}. Tu as réussi en {5 - tour}  essais")
     
-"""
+
 
 
 """ Jeu de rôle"""
@@ -146,7 +143,6 @@ while pv_joueur>0 and pv_adversaire>0:
     print(f'Il vous reste {pv_joueur_aff} points de vie 💔')
     print(f'Il reste {pv_adversaire_aff} points de vie à votre adversaire 💔')
     
-
 if pv_joueur<=0: 
     print("Vous n'avez plus de point de vie 💀 ")
 
