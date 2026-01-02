@@ -59,43 +59,7 @@ while True :
     "👉 Votre choix : ")
 
 
-""" Le nombre mystère """
 
-import random
-
-nombre_mystere= random.randint(0,100)
-tour=5
-
-while tour>0 :
-    print(f"il vous reste {tour} essai{'s' if tour>1 else ''}")
-
-    nb_utilisateur=input("Devinez le nombre: ")
-    
-
-    if not nb_utilisateur.isdigit():
-        print("Veuilllez entre un nombre entre 0 et 100")
-        continue
-    elif int(nb_utilisateur)>100 or int(nb_utilisateur)<0:
-        print("Veuilllez entre un nombre entre 0 et 100")
-        continue
-
-    nb_utilisateur=int(nb_utilisateur)
-
-    if nb_utilisateur>nombre_mystere:
-        print(f"Le nombre mystère est plus petit que {nb_utilisateur}")
-    elif nb_utilisateur<nombre_mystere:
-        print(f"Le nombre mystère est plus grand que {nb_utilisateur}")
-    else:
-        break
-
-    tour-=1
-
-if tour==0 :
-    print(f"Trop tard! ⏳ Le nombre mystère été {nombre_mystere}") 
-
-if tour>0 and nb_utilisateur==nombre_mystere: 
-    print(f"Félicitation 🎉 le nombre mystère est bien {nb_utilisateur}. Tu as réussi en {5 - tour}  essais 🚀")
-    
 
 
 
