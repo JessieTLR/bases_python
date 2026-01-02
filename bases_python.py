@@ -1,17 +1,3 @@
-""" Calculatrice """
-
-a = b =""
-
-while not (a.isdigit() and b.isdigit()):
-    a = input ("Veuillez entrer un premier nombre : ")
-    b = input ("Veuillez entrer un deuxième nombre : ")
-
-    if not (a.isdigit() and b.isdigit()):
-        print ("Veuillez entrer deux nombres valides")
-
-print(f"Le résultat de l'addition de {a} et {b} est {int(a) + int(b)}")
-#print ("Voulez-vous faire un autre calcul? Y/N")
-
 
 """ Liste de courses """
 
@@ -94,7 +80,7 @@ if tour==0 :
     print(f"Trop tard! ⏳ Le nombre mystère été {nombre_mystere}") 
 
 if tour>0 and nb_utilisateur==nombre_mystere: 
-    print(f"Félicitation 🎉 le nombre mystère est bien {nb_utilisateur}. Tu as réussi en {5 - tour}  essais")
+    print(f"Félicitation 🎉 le nombre mystère est bien {nb_utilisateur}. Tu as réussi en {5 - tour}  essais 🚀")
     
 
 
