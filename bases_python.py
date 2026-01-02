@@ -97,3 +97,58 @@ if tour>0 and nb_utilisateur==nombre_mystere:
     print(f"Félicitation 🎉 le nombre mystère est bien {nb_utilisateur}. Tu as réussi en {5 - tour}  essais 🚀")
     
 
+
+
+""" Jeu de rôle"""
+import random
+
+pv_joueur=50
+pv_adversaire=50
+
+nb_potions=3
+
+
+while pv_joueur>0 and pv_adversaire>0: 
+    choix=input('Souhaitez-vous attaquer "1" ou utiliser une potion "2" : ')
+
+    if choix!="1" and choix!="2":
+        continue
+    elif not choix.isdigit():
+        continue
+
+    attaque_joueur=random.randint(5,10)
+    attaque_adv=random.randint(5,15)
+
+    if choix=="1" :
+        print(f'Vous avez infligé {attaque_joueur} dégats à votre adversaire')
+        print(f'Votre adversaire vous a infligé {attaque_adv} dégats')
+        pv_joueur-=attaque_adv
+        pv_adversaire-=attaque_joueur
+        
+    
+    elif choix=="2":
+        if nb_potions<=0:
+                print("Vous n'avez plus de potions")
+                continue
+        
+        potions=random.randint(15,50)
+        nb_potions-=1
+
+        print(f'Vous avez récupéré {potions} points de vie ❤️. Il ne vous reste plus que {nb_potions} potions 🧪')
+        print(f'Votre adversaire vous a infligé {attaque_adv} dégats')
+        pv_joueur=pv_joueur + potions - attaque_adv
+        
+    pv_joueur_aff=max(pv_joueur,0)
+    pv_adversaire_aff=max(pv_adversaire,0)
+    print(f'Il vous reste {pv_joueur_aff} points de vie 💔')
+    print(f'Il reste {pv_adversaire_aff} points de vie à votre adversaire 💔')
+    
+if pv_joueur<=0: 
+    print("Vous n'avez plus de point de vie 💀 ")
+
+elif pv_adversaire<=0: 
+    print("Vous avez vaincu votre adversaire 💪 ")
+
+else: 
+     print("Double KO 💀💀")
+    
