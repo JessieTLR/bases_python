@@ -167,7 +167,7 @@ with open ("data.json", "r") as f:  (r = read)
     donnees.append(4) --> permet d'ajouter un élément à la liste
 
 with open ("data.json", "w") as f:  (w = write)
-    json.dump(donnees, f) --> écrase les précédentes données donc la liste initiale, puis ajoute la nouvelle variable "donnée" incrémentée de (4) dans le f (fichier)
+    json.dump(donnees, f, indent=4) --> écrase les précédentes données donc la liste initiale, puis ajoute la nouvelle variable "donnée" incrémentée de (4) dans le f (fichier). Indent= 4 signifie juste qu'il y aura une indentation de 4 pour que ce soit plus lisible. 
 
 with open ("data.json", "a") as f:  (a = append)
 
