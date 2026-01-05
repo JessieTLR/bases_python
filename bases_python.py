@@ -169,6 +169,8 @@ with open ("data.json", "r") as f:  (r = read)
 with open ("data.json", "w") as f:  (w = write)
     json.dump(donnees, f, indent=4) --> écrase les précédentes données donc la liste initiale, puis ajoute la nouvelle variable "donnée" incrémentée de (4) dans le f (fichier). Indent= 4 signifie juste qu'il y aura une indentation de 4 pour que ce soit plus lisible. 
 
+    ajouter le paramètre ensure_ascii=False --> Sinon les accents ne s'affiche pas dans les données JSON; ATTENTION -> n'a aucun impact sur la lecture du fichier si on oublie. 
+
 with open ("data.json", "a") as f:  (a = append)
 
 """
