@@ -152,3 +152,23 @@ elif pv_adversaire<=0:
 else: 
      print("Double KO 💀💀")
     
+
+
+"""Mes fichiers JSON"""
+
+"""
+import json
+
+with open ("data.json", "r") as f:  (r = read)
+    json.load(f) = méthode pour lire les données dans le fichier
+
+    de là on peut écrire donnees = json.load(f) --> on sauvegarde les données dans une variable 
+
+    donnees.append(4) --> permet d'ajouter un élément à la liste
+
+with open ("data.json", "w") as f:  (w = write)
+    json.dump(donnees, f) --> écrase les précédentes données donc la liste initiale, puis ajoute la nouvelle variable "donnée" incrémentée de (4) dans le f (fichier)
+
+with open ("data.json", "a") as f:  (a = append)
+
+"""
