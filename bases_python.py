@@ -189,11 +189,23 @@ b=0
 
 si on cherche à print la division de a/b on aura une erreur de type "ZeroDivisionError" donc on 
 try :
-    a/b
+    resultat= a/b
 exept ZeroDivisionError:
     print("La division par zéro n'est pas possible")
 
-    
+sinon par exemple si b = "bonjour"
 
+exept TypeError as e: 
+    print ("Erreur: ", e) --> on print le type d'erreur
+
+on peut ajouter une variable else, il ne sera executer que si le try réussi:
+
+else: 
+    print (resultat)
+
+on peut egalement mettre un bloc finally qui s'executera quoiqu'il se passe: 
+
+finally:
+    print("bloc terminé")
 
 """
