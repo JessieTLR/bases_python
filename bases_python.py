@@ -174,3 +174,26 @@ with open ("data.json", "w") as f:  (w = write)
 with open ("data.json", "a") as f:  (a = append)
 
 """
+
+"""
+La gestion des erreur:
+
+LBYL et EAFP
+
+Dans le second cas: try/exept
+
+Exemple: 
+
+a=5
+b=0
+
+si on cherche à print la division de a/b on aura une erreur de type "ZeroDivisionError" donc on 
+try :
+    a/b
+exept ZeroDivisionError:
+    print("La division par zéro n'est pas possible")
+
+    
+
+
+"""
