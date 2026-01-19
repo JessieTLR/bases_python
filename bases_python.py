@@ -216,6 +216,16 @@ Appeller ensuite une variable contenu dans le module avec mon_module.variable
 Utiliser le  python path pour créer des chemins. Sys
 
 Les packages :
-    
+    a chaque fois que le package est importé le fichier __init__ sera lu.
+
+Les formats docstring
+
+    syntaxe de google : 
+        Args:
+            param1: un premier paramètre
+            param2: un deuxième paramètre
+
+        Returns: 
+            description de ce qui est retourné
 
 """
