@@ -229,3 +229,15 @@ Les formats docstring
             description de ce qui est retourné
 
 """
+
+def fonction_onsenfou (nom, age):
+    """_summary_       
+
+    Args:
+        nom (str): nom de l'utilisateur
+        age (int): age de l'utilisateur
+
+    Returns:
+        list: list de nombre
+    """
+    return [1,2,3]
