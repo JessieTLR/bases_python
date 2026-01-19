@@ -208,4 +208,9 @@ on peut egalement mettre un bloc finally qui s'executera quoiqu'il se passe:
 finally:
     print("bloc terminé")
 
+""" 
+""" 
+On peut créer des modules et les importer avec import mon_module
+Appeller ensuite une variable contenu dans le module avec mon_module.variable
+
 """
