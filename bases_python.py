@@ -246,7 +246,9 @@ def fonction_onsenfou (nom, age):
 
 import logging
 
-logging
+logging.basicConfig(level=logging.DEBUG) # permet de configurer de le logging sinon par défaut les seuls qui seront configuré seront warning, error et critical.
+#ATTENTION avec cette commande ce sont tous les niveaux de logging à partir du DEBUG qui vont affichés. Ici --> Tous. Donc l'ordre d'affichage à son importance. S'il été en deuxième ligne, info ne se configurerai pas. 
+                    format='%(actime)s - %(levelname)s -%(message)s'
 
 logging.debug("La fonction a bie nété exécuté")
 logging.info ("Message d'information générale") #informe à l'utilisateur que son action a bien réussie
