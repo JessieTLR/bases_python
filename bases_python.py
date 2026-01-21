@@ -246,14 +246,22 @@ def fonction_onsenfou (nom, age):
 
 import logging
 
-logging.basicConfig(level=logging.DEBUG) # permet de configurer de le logging sinon par défaut les seuls qui seront configuré seront warning, error et critical.
-#ATTENTION avec cette commande ce sont tous les niveaux de logging à partir du DEBUG qui vont affichés. Ici --> Tous. Donc l'ordre d'affichage à son importance. S'il été en deuxième ligne, info ne se configurerai pas. 
-                    format='%(actime)s - %(levelname)s -%(message)s'
+logging.basicConfig(level=logging.DEBUG, # permet de configurer de le logging sinon par défaut les seuls qui seront configuré seront warning, error et critical.
+#ATTENTION avec cette commande ce sont tous les niveaux de logging à partir du DEBUG qui vont affichés. Ici --> Tous. Donc l'ordre d'affichage à son importance. S'il été en deuxième ligne, info ne se configurerai pas.
+                    filename="app.log" #nom du fichier dans lequel ont veut mettre les alerte
+                    filemode="w" #w (write) si on veut écraser, a (append) si on veut ajouter
+                    format='%(asctime)s - %(levelname)s -%(message)s')
 
 logging.debug("La fonction a bie nété exécuté")
 logging.info ("Message d'information générale") #informe à l'utilisateur que son action a bien réussie
 logging.warning("Attention!") #avertissement qui ne fera pas planter le script. Non critique
 logging.error("une erreur est arrivée") #un peu plus qu'un avertissement, tj pas critique, le script peut continuer de fonctionner. Juste une étape du script n'a pas fonctionné
 logging.critical('Erreur critique') #le script plantera
+
+
+""" CREER UN ENVIRONNEMENT VIRTUEL """
+
+
+
 
 
