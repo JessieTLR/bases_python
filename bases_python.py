@@ -241,3 +241,17 @@ def fonction_onsenfou (nom, age):
         list: list de nombre
     """
     return [1,2,3]
+
+
+
+import logging
+
+logging
+
+logging.debug("La fonction a bie nété exécuté")
+logging.info ("Message d'information générale") #informe à l'utilisateur que son action a bien réussie
+logging.warning("Attention!") #avertissement qui ne fera pas planter le script. Non critique
+logging.error("une erreur est arrivée") #un peu plus qu'un avertissement, tj pas critique, le script peut continuer de fonctionner. Juste une étape du script n'a pas fonctionné
+logging.critical('Erreur critique') #le script plantera
+
+
