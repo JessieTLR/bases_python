@@ -261,7 +261,14 @@ logging.critical('Erreur critique') #le script plantera
 
 """ CREER UN ENVIRONNEMENT VIRTUEL """
 
-
+"""
+    dans bash créer un mkdir mon_projet
+    ensuite python m- venv nom_de_environnement_virtuel exemple env
+    ls pour voir les sous dossier
+    cd Scripts
+    sources activate --> la on doit voir un (env) qui apparait pour dire qu'on est dans l'environnement virtuel
+    deactivate pour désactiver. 
+"""
 
 
 
