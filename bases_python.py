@@ -272,9 +272,11 @@ logging.critical('Erreur critique') #le script plantera
     Pour les Pip: 
     dans bash taper pip3.13 (selon la version de Python)
 
-    aller voir pipy.org pour voir toutes les librairies qu'on peut installer. Ex request... sinon on peut chercher la commande search pour rechercher les modules. 
+    aller voir pypi.org pour voir toutes les librairies qu'on peut installer. Ex request... sinon on peut chercher la commande search pour rechercher les modules. 
 
-    
+    Installer les packages : 
+        
+
 """
 
 
