@@ -268,6 +268,13 @@ logging.critical('Erreur critique') #le script plantera
     cd Scripts
     sources activate --> la on doit voir un (env) qui apparait pour dire qu'on est dans l'environnement virtuel
     deactivate pour désactiver. 
+
+    Pour les Pip: 
+    dans bash taper pip3.13 (selon la version de Python)
+
+    aller voir pipy.org pour voir toutes les librairies qu'on peut installer. Ex request... sinon on peut chercher la commande search pour rechercher les modules. 
+
+    
 """
 
 
