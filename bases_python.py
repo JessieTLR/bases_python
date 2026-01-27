@@ -280,7 +280,8 @@ logging.critical('Erreur critique') #le script plantera
     Pour lister les packages installés: 
         pip3.13 list
 
-    Désinstaller un package
+    Désinstaller un package:
+        pip3.13 uninstall package
 
 """
 
