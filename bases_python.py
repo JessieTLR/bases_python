@@ -275,7 +275,12 @@ logging.critical('Erreur critique') #le script plantera
     aller voir pypi.org pour voir toutes les librairies qu'on peut installer. Ex request... sinon on peut chercher la commande search pour rechercher les modules. 
 
     Installer les packages : 
-        
+        pip.versiondepython install requests  ou n'importe quel package
+
+    Pour lister les packages installés: 
+        pip3.13 list
+
+    Désinstaller un package
 
 """
 
