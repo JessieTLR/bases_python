@@ -1,11 +1,11 @@
-def longueur(variable):
-	pass
+mot = "un roc cornu"
 
-variable=["v", "a", "r", "i", "a","b", "l", "e"]
-	
-for i in variable:
-        if i 
-        i +=1
-        print(i)
-    
-resultat = longueur("bonjour")
+lettres = mot.replace("", " ")
+liste=lettres.lower().split()
+
+if liste == liste[::-1]:
+    resultat=True
+else:
+    resultat=False
+
+print(resultat)
