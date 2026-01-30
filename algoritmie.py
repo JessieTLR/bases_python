@@ -1,14 +1,9 @@
 import string
 
-phrase = "Joyeux, ivre, fatigué, le nez qui pique, Clown Hary skie dans l’ombre"
-phrase_lower = phrase.lower()
-
-alphabet=string.ascii_lowercase
-
-comparaison=set(phrase_lower)<= set(alphabet)
+lorem = """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+		   Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
 
 
-
-
-print(comparaison)
-
+alphabet = list(string.ascii_lowercase)
