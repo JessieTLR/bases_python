@@ -1,11 +1,14 @@
-mot = "un roc cornu"
+import string
 
-lettres = mot.replace("", " ")
-liste=lettres.lower().split()
+phrase = "Joyeux, ivre, fatigué, le nez qui pique, Clown Hary skie dans l’ombre"
+phrase_lower = phrase.lower()
 
-if liste == liste[::-1]:
-    resultat=True
-else:
-    resultat=False
+alphabet=string.ascii_lowercase
 
-print(resultat)
+comparaison=set(phrase_lower)<= set(alphabet)
+
+
+
+
+print(comparaison)
+

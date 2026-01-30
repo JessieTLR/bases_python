@@ -299,3 +299,24 @@ else:
 
 print(resultat)
 
+
+
+
+# COMPARAISON 
+
+import string
+
+phrase = "Joyeux, ivre, fatigué, le nez qui pique, Clown Hary skie dans l’ombre"
+phrase_lower = phrase.lower()
+
+alphabet = list(string.ascii_lowercase)
+
+for l in phrase_lower:
+	if l in alphabet:
+		alphabet.remove(l)
+
+if alphabet:
+    resultat = "La phrase n'est pas un Pangramme"
+else:
+    resultat = "La phrase est un Pangramme"
+
