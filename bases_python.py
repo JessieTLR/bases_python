@@ -342,3 +342,15 @@ for lettre in phrase:
 resultat=dict(sorted(compteur.items()))
 
 print(resultat)
+
+
+#méthode isdigit
+
+digit=[1, 2, 3, 4, 5, 6, 7 ,8, 9, 0]
+
+
+def isdigit():
+    pass
+
+
+resultat = isdigit("1854274")
