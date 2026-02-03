@@ -357,3 +357,17 @@ resultat = isdigit("1854274")
 
 
 
+
+# Les Classes 
+
+class Voiture:
+    voiture_crees = 0
+    def __init__(self, marque):
+        Voiture.voiture_crees +=1
+        self.marque=marque
+
+
+print(Voiture.marque)
+
+voiture_01 = Voiture("Lamborghini")
+voiture_02 = Voiture("Porsche")
