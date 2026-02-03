@@ -371,3 +371,27 @@ print(Voiture.marque)
 
 voiture_01 = Voiture("Lamborghini")
 voiture_02 = Voiture("Porsche")
+
+
+# Dataclass pour simplifier la création de classes
+
+from dataclasses import dataclass
+from typing import ClassVar
+
+@dataclass
+class User: 
+    first_name: str
+    last_name: str ="" #permet de rajouter une valeur par défaut si on ne met pas tous les attributs
+    c:ClassVar[int] # pas compris
+
+    def __post_init__(self): 
+        self.fullname= f"{self.last_name} {self.first_name}"
+
+    """ Meme chose que: 
+    class User: 
+        def __init__(self, first_name:str, last_name:str):
+            self.first_name=first_name
+            self.last_name=last_name
+    """
+patrick= User(first_name="Patrick", last_name="Smith")
+print(repr(patrick))
