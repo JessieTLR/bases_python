@@ -1,19 +1,24 @@
-import string
+import random
 
-lorem = """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-		   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-		   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-		   Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
-phrase=lorem.lower().replace(".","").replace(",","").replace(" ","")
+nombre_mystere=random.randint(1,40)
+tour=8
 
-alphabet = list(string.ascii_lowercase)
-
-compteur={}
-
-for lettre in phrase:
-    if lettre.isalpha():
-        compteur[lettre]=compteur.get(lettre, 0) +1
-
-resultat=dict(sorted(compteur.items()))
-
-print(resultat)
+while tour>0:
+    nombre=int(input("Choississez un nombre entre 0 et 100"))
+    if not nombre.isdigit():
+		print("Ce n'est pas un nombre")
+		continue
+	elif nombre<0 or nombre>100: 
+		continue
+	else:
+		if nombre_mystere<nombre:
+			print(f"Le nombre mystère est plus petit que {nombre}")
+			tour-=1
+			continue
+		elif nombre_mystere>nombre:
+			print(f"Le nombre mystère est plus grand que {nombre}")
+			tour-=1
+			continue
+		else:
+			print(f"Félicitation!!! Le nombre mystère est {nombre_mystere}")
+			break
