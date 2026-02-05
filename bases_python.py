@@ -439,3 +439,19 @@ class Voiture:
 lambo=Voiture.lamborghini()
 porsche=Voiture.porsche()
 Voiture.afficher_nombre_voiture()
+
+
+# Méthode __str___
+class Voiture: 
+    voiture_crees=0
+    def __init__(self, marque, vitesse, prix):
+        Voiture.voiture_crees+=1
+        self.marque = marque
+        self.vitesse = vitesse
+       
+    def __str__(self):
+        return f"Voiture de marque {self.marque} avec une vitesse maximal de {self.vitesse}."
+    
+porsche=Voiture("Porsche", 200)
+affichage=str(porsche)
+print(affichage)
