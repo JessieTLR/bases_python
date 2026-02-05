@@ -395,3 +395,22 @@ class User:
     """
 patrick= User(first_name="Patrick", last_name="Smith")
 print(repr(patrick))
+
+
+class Voiture: 
+    def __init__(self, marque, vitesse, prix):
+        self.marque = marque
+        self.vitesse = vitesse
+        self.prix = prix
+
+    @classmethod
+    def lamborghini(cls):
+        return cls(marque="lamborgihni", vitesse=250, prix=200000)
+    
+    @classmethod
+    def porsche(cls):
+        return cls(marque="porsche", vitesse=220, prix=180000)
+    
+lambo=Voiture.lamborghini()
+porsche=Voiture.porsche()
+print(porsche.prix)
