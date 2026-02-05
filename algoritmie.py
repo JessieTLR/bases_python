@@ -1,24 +1,23 @@
-import random
+class Voiture: 
+    voiture_crees=0
+    def __init__(self, marque, vitesse, prix):
+        Voiture.voiture_crees+=1
+        self.marque = marque
+        self.vitesse = vitesse
+        self.prix = prix
 
-nombre_mystere=random.randint(1,40)
-tour=8
+    @classmethod
+    def lamborghini(cls):
+        return cls(marque="lamborgihni", vitesse=250, prix=200000)
+    
+    @classmethod
+    def porsche(cls):
+        return cls(marque="porsche", vitesse=220, prix=180000)
+    
+    @staticmethod
+    def afficher_nombre_voiture():
+        print(f'vous avez {Voiture.voiture_crees} voitures dans votre garage')
 
-while tour>0:
-    nombre=int(input("Choississez un nombre entre 0 et 100"))
-    if not nombre.isdigit():
-		print("Ce n'est pas un nombre")
-		continue
-	elif nombre<0 or nombre>100: 
-		continue
-	else:
-		if nombre_mystere<nombre:
-			print(f"Le nombre mystère est plus petit que {nombre}")
-			tour-=1
-			continue
-		elif nombre_mystere>nombre:
-			print(f"Le nombre mystère est plus grand que {nombre}")
-			tour-=1
-			continue
-		else:
-			print(f"Félicitation!!! Le nombre mystère est {nombre_mystere}")
-			break
+lambo=Voiture.lamborghini()
+porsche=Voiture.porsche()
+Voiture.afficher_nombre_voiture()
