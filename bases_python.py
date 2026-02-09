@@ -474,4 +474,8 @@ class Utilisateur:
             print(projet)
 
 class Junior(Utilisateur): #en mettant Utilisateur entre parenthèse on signifie que la nouvelle classe Junior hérite de toute la classe Utilisateur.
-    pass
+    def __init__ (self, nom, prenom): 
+        Utilisateur.__init__(self,nom, prenom)
+
+paul = Junior("Paul", "Durand")
+paul.afficher_projet()
