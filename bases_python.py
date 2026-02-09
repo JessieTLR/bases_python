@@ -455,3 +455,23 @@ class Voiture:
 porsche=Voiture("Porsche", 200)
 affichage=str(porsche)
 print(affichage)
+
+
+#l'Héritage
+
+projets = ["pr_GameOfThrones", "HarryPotter", "pr_Avengers"]
+
+class Utilisateur:
+    def __init__ (self, nom, prenom): 
+        self.nom = nom
+        self.prenom = prenom
+
+    def __str__ (self):
+        return f"Utilisateur {self.nom} {self.prenom}"
+    
+    def afficher_projet (self):
+        for projet in projets:
+            print(projet)
+
+class Junior(Utilisateur): #en mettant Utilisateur entre parenthèse on signifie que la nouvelle classe Junior hérite de toute la classe Utilisateur.
+    pass
